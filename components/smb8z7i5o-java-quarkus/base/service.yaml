@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: smb8z7i5o-java-quarkus
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: smb8z7i5o-java-quarkus 
+  name: smb8z7i5o-java-quarkus
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: smb8z7i5o-java-quarkus 
